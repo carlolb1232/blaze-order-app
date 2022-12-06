@@ -36,7 +36,7 @@ const EditOrderProduct = () => {
 
   return (
     <div className='container'>
-      <h2>Editar comanda</h2>
+      <h2>Edit Order Item</h2>
       {
         orderProduct&&
         <OrderProductForm quantity={orderProduct.quantity} idProduct={orderProduct.product._id} onSubmitProp={updateOrderProduct}/>

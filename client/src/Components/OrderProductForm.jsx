@@ -31,7 +31,7 @@ const OrderProductForm = (props) => {
           idProduct: idProduct,
         }}
         validationSchema={Yup.object().shape({
-          quantity: Yup.number().required("Write quantity"),
+          quantity: Yup.number().required("Write a quantity"),
         })}
         onSubmit={(values, { setSubmitting }) => {
           onSubmitProp(values);
@@ -66,7 +66,7 @@ const OrderProductForm = (props) => {
                     name="idProduct"
                     className="form-select"
                   >
-                  <option value={""} disabled>--ELIJA UN PRODUCTO--</option>
+                  <option value={""} disabled>--Choose a product--</option>
                     {
                       products&&
                       products.map(product=>{
@@ -75,10 +75,6 @@ const OrderProductForm = (props) => {
                         )
                       })
                     }
-                    {/* <option value="Candies">Candies</option>
-                    <option value="Cakes">Cakes</option>
-                    <option value="Desserts">Desserts</option>
-                    <option value="Drinks">Drinks</option> */}
                   </Field>
                   {errors.product && touched.product && (
                     <p className="error"> {errors.product} </p>
