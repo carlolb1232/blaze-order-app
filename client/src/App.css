@@ -28,6 +28,43 @@
   color: #61dafb;
 }
 
+li{
+  list-style: none;
+}
+
+.count-container{
+  display: flex;
+  justify-content: flex-end;
+  text-align: start;
+}
+
+.action-container{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.sub-title{
+  text-align: start;
+}
+
+.create-button{
+  float: right;
+}
+
+.button-container{
+  display: flex;
+  justify-content: end;
+  gap: 15px;
+}
+
+.price-tags{
+  font-weight: bold;
+}
+.data-container{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

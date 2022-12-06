@@ -44,7 +44,7 @@ const OrderSchema = new mongoose.Schema(
       type: Number,
       default: 0
     },
-    order_items:[{type:mongoose.Schema.Types.ObjectId,ref:"Review"}],
+    order_items:[{type:mongoose.Schema.Types.ObjectId,ref:"OrderProduct"}],
   },
   {
     timestamps: true
